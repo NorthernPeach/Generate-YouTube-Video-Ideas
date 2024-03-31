@@ -1,10 +1,14 @@
 asyncio
+bs4
+dotenv
+futures
 langchain
 langchain-openai
 openai
 pandas
 python-dotenv
 pytube
+requests
 streamlit
 transformers
 youtube-transcript-api
