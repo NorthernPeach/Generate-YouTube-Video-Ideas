@@ -14,3 +14,5 @@ To run the code execute:
 ```
 $ streamlit run main.py
 ```
+
+**Before** running make sure that you have installed all required packages and created your *.env* file with the OPENAI_API_KEY variable (https://platform.openai.com/account/api-keys)
