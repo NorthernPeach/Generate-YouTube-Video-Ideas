@@ -1,0 +1,8 @@
+asyncio
+langchain
+openai
+pandas
+python-dotenv
+pytube
+streamlit
+youtube-transcript-api
