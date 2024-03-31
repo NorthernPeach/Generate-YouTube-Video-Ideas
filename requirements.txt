@@ -1,5 +1,5 @@
 asyncio
-bs4
+beautifulsoup4
 dotenv
 futures
 langchain
