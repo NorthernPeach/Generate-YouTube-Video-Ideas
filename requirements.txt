@@ -9,5 +9,5 @@ python-dotenv
 pytube
 requests
 streamlit
-transformers
+torch
 youtube-transcript-api
