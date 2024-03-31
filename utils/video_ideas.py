@@ -49,8 +49,8 @@ def build_llm(high_engagement_vids_urls, low_engagement_vids_urls, openai_api_ke
         template=prompt_template,
         input_variables=["high_engagement_videos", "low_engagement_videos"],
     )
-    ideas_chain = LLMChain(llm=llm, prompt=PROMPT, verbose=True)
-
+    ideas_chain = LLMChain(llm=llm, prompt=PROMPT)
+    
     response = ideas_chain.invoke(
         {
             "high_engagement_videos": high_eng_prompt,
@@ -60,7 +60,6 @@ def build_llm(high_engagement_vids_urls, low_engagement_vids_urls, openai_api_ke
 
     # Read the CSV data and create a DataFrame
     csv_file = StringIO(response['text'])
-    df = pd.read_csv(csv_file, sep="|")   
-    df.to_csv('data.csv', index=False)  # Optional arguments explained below
-
+    df       = pd.read_csv(csv_file, sep="|")   
+    # df.to_csv('data.csv', index=False)  # Optional arguments explained below
     return df

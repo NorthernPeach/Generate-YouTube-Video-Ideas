@@ -56,7 +56,7 @@ def generate_youtube_ideas_from_content(page_content: dict, openai_api_key: str)
         ]
     )
 
-    chat_model = ChatOpenAI(temperature=0.2, model="gpt-3.5-turbo-16k", openai_api_key=openai_api_key)
+    chat_model = ChatOpenAI(temperature=0.2, model="gpt-3.5-turbo", openai_api_key=openai_api_key)
 
     llm_chain = LLMChain(prompt=chat_prompt, llm=chat_model)
     response = llm_chain.invoke(
