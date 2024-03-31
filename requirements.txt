@@ -1,5 +1,6 @@
 asyncio
 langchain
+langchain-openai
 openai
 pandas
 python-dotenv
