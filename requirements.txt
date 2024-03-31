@@ -1,9 +1,8 @@
 asyncio
 beautifulsoup4
-dotenv
-futures
 langchain
 langchain-openai
+lxml
 openai
 pandas
 python-dotenv
